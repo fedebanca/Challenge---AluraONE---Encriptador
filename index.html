@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- <header class="header">
+        <img src="assets/Logo.png" alt="Logo de Alura">
+    </header> -->
+    <main class="presentacion">
+        <div class="presentacion__principal">
+            <img class="presentacion__principal__aluraLogo" src="assets/Logo.png" alt="Logo de Alura">
+            <section class="presentacion__principal__entrada">
+                <textarea class="presentacion__principal__entrada__textarea" name="textoIngresado" id="textoIngresado" placeholder="Ingrese el texto aquí"></textarea>
+                <!-- <input class="presentacion__principal__entrada__input" type="text" placeholder="Ingrese el texto aquí"> -->
+                <div>
+                    <p class="presentacion__principal__entrada__mensaje"><img class="presentacion__principal__entrada__mensaje__icon" src="assets/Group.png" alt="Ícono de exclamación">Solo letras minúsculas y sin acentos</p>
+                    <div class="presentacion__principal__entrada__botones">
+                        <button id="btnEncriptar" class="presentacion__principal__entrada__botones__btnEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                        <button id="btnDesencriptar" class="presentacion__principal__entrada__botones__btnDesencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
+                </div>            
+            </section>
+        </div>
+        <section class="presentacion__salida">
+            <textarea class="presentacion__salida__output" readonly>Output</textarea>
+            <img class="presentacion__salida__imagen" src="assets/Muñeco.png" alt="Imagen de muñeco">
+            <div class="presentacion__salida__texto">
+                <p class="presentacion__salida__texto__1">Ningún mensaje fue encontrado</p>
+                <p class="presentacion__salida__texto__2">Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            <button id="btnCopiar" class="presentacion__salida__btnCopiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Federico Exequiel Bancalari Solá</p>
+    </footer>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
